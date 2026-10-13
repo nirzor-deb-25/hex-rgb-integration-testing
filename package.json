@@ -1,0 +1,22 @@
+{
+  "name": "hex-rgb-integration-testing",
+  "version": "1.0.0",
+  "description": "Hexadecimal-to-RGB conversion library and Express REST API with unit and integration tests",
+  "main": "src/hexToRgb.js",
+  "scripts": {
+    "test": "mocha tests/**/*.test.mjs",
+    "start": "node src/server.js",
+    "test:unit": "mocha tests/hexToRgb.test.mjs",
+    "test:integration": "mocha tests/api.test.mjs"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "chai": "^6.3.0",
+    "mocha": "^12.0.3",
+    "supertest": "^7.3.1"
+  }
+}
